@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Validación de formulario #3</title>
+    <script src="Form3.js"></script>
+  </head>
+
+  <body bgcolor="#FFFFFF">
+    <form
+      name="contacto_form"
+      method="post"
+      action="/"
+      onSubmit="return validar_formulario( );"
+    >
+      <h1>Por favor, ingrese los detalles del formulario</h1>
+
+      <p>Nombre: <input type="text" name="contact_name" /></p>
+
+      <p>
+        Género: <input type="radio" name="genero" value="Masculino" /> Masculino
+        <input type="radio" name="genero" value="Femenino" /> Femenino
+      </p>
+
+      <p>
+        Edad:
+
+        <select name="edad">
+          <option value="">Seleccione su edad:</option>
+          <option value="0-18 años">0-18 años</option>
+          <option value="18-30 años">18-30 años</option>
+          <option value="30-45 años">30-45 años</option>
+          <option value="45-60 años">45-60 años</option>
+          <option value="60+ años">60+ años</option>
+        </select>
+      </p>
+
+      <p>
+        ¿Estas de acuerdo con los términos y condiciones?
+        <input type="checkbox" name="terms" value="Si" /> Si
+      </p>
+
+      <p><input type="submit" name="send" value="Enviar detalles" /></p>
+    </form>
+  </body>
+</html>

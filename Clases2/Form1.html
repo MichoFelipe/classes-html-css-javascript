@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Validación de formulario #1</title>
+    <script src="Form1.js"></script>
+  </head>
+
+  <body>
+    <h1>Bienvenido! Ingrese sus datos.</h1>
+    <form name="login">
+      <table width="200" border="0">
+        <tr>
+          <td><h2>Usuario</h2></td>
+          <td>
+            <span>
+              <input name="usuario" type="text" value="" size="20" required />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td><h2>Clave</h2></td>
+          <td>
+            <span class="cnt">
+              <input name="password" type="password" value="" size="20" />
+            </span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              value="Entrar"
+              target="_parent"
+              onclick="Login()"
+              type="button"
+            />
+          </td>
+          <td>
+            <input type="reset" name="Borrar" id="Borrar" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
