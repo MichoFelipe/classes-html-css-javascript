@@ -1,0 +1,187 @@
+@import url('../fonts/Poppins.css') 
+
+$color_falcon = #b71c1c;
+
+*
+  box-sizing: border-box
+
+.underline--left
+  position relative
+  &:after
+    content: ""
+    position: absolute
+    width:  30px
+    height: 2px
+    bottom -20px
+    left    0
+    background-color $color_falcon
+
+.underline--center
+  position relative
+  &:after
+    content: ""
+    position: absolute
+    width:  30px
+    height: 2px
+    bottom -20px
+    left    50%
+    margin-left -15px
+    background-color $color_falcon
+
+.icon
+  background-color: $color_falcon
+
+h1, h2, h3, h4, h5
+  color #212529
+
+body
+  font-family -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+  font-size 1rem
+  font-weight: 300
+  color #5a6169
+
+  .bienvenida
+    min-height 700px
+    background url(../images/carousel-3.jpg) no-repeat center fixed
+    background-size: cover
+    position: relative
+
+    &::before
+      position: absolute
+      content: ""
+      top     0
+      right:  0
+      bottom: 0
+      left    0
+      opacity: 0.9
+      background-color: #212529
+
+    nav 
+      .navbar-nav
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+        font-weight: 300
+
+    @media (max-width: 992px)
+      .header-social
+        display: none
+
+    @media (max-width: 768px)
+      .contenido__wrapper
+        width: 100%
+        padding-left: 2em
+        padding-right: 2em
+        text-align center
+        img 
+          width 60%
+
+  .caracteristicas
+    width: 100%
+    border-bottom: 1px solid #eaebed
+
+
+    .caracteristicas__bg
+      position relative  
+      background url(../images/carousel-4.jpg) no-repeat center fixed
+      background-size: cover
+    
+      &::before
+        position: absolute
+        content: ""
+        top     0
+        right:  0
+        bottom: 0
+        left    0
+        opacity: 0.7
+        background-color: #e9ecef
+
+      img 
+        position: absolute
+        top  50%
+        left 100%
+        transform: translate(-50%, -50%)
+        max-width: 270px  
+        border-radius: 60px
+        z-index 1
+
+    .caracteristicas__inner
+      width:      100%
+      min-height: 700px
+      padding-left:  180px
+      padding-right: 50px
+
+      .title
+        font-size: 2rem
+
+      .icon
+        min-width:  65px
+        height:     65px
+        text-align   center
+        line-height: 65px
+        font-size:   27px
+        box-shadow: 0 2px 8px rgba(33,37,41,.3)
+        border-radius 50%
+  
+  .maestros
+    min-height: 500px
+    border-bottom: 1px solid #eaebed
+
+    .avatar
+      width: 100px
+      height 100px
+     
+
+      img 
+        width: 100%
+        border-radius: 50px
+        box-shadow: 0px 4px 15px rgba(33,37,41,.3)
+
+  .testimonios-experiencias
+    width: 100%
+    min-height: 700px
+    background-color #f9fafc
+
+    .card
+      border-radius 25px  
+      box-shadow: 0 8px 15px rgba(33,37,41,.09)
+      transition 0.5s box-shadow ease
+      
+      &:hover
+        box-shadow: 0 8px 15px rgba(33,37,41,.3)
+
+      .card-img-top
+        border-top-left-radius: 25px
+        border-top-right-radius: 25px
+
+      .button
+        border-radius: 50px
+
+
+
+
+
+  @media (max-width: 992px)
+    .caracteristicas__bg
+      display none
+    .caracteristicas__inner
+      padding-left: 50px !important
+
+   @media (max-width: 400px)
+    .caracteristicas__inner
+      padding-left: 10px !important
+      padding-right: 10px !important
+
+      article
+        .icon
+          display none   
+
+
+
+
+
+
+
+      
+
+        
+        
+    

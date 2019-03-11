@@ -1,0 +1,177 @@
+@import url("../fonts/Poppins.css");
+* {
+  box-sizing: border-box;
+}
+.underline--left {
+  position: relative;
+}
+.underline--left:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  bottom: -20px;
+  left: 0;
+  background-color: #b71c1c;
+}
+.underline--center {
+  position: relative;
+}
+.underline--center:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -15px;
+  background-color: #b71c1c;
+}
+.icon {
+  background-color: #b71c1c;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #212529;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 300;
+  color: #5a6169;
+}
+body .bienvenida {
+  min-height: 700px;
+  background: url("../images/carousel-3.jpg") no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+}
+body .bienvenida::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  background-color: #212529;
+}
+body .bienvenida nav .navbar-nav {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
+}
+@media (max-width: 992px) {
+  body .bienvenida .header-social {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  body .bienvenida .contenido__wrapper {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+  }
+  body .bienvenida .contenido__wrapper img {
+    width: 60%;
+  }
+}
+body .caracteristicas {
+  width: 100%;
+  border-bottom: 1px solid #eaebed;
+}
+body .caracteristicas .caracteristicas__bg {
+  position: relative;
+  background: url("../images/carousel-4.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+body .caracteristicas .caracteristicas__bg::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #e9ecef;
+}
+body .caracteristicas .caracteristicas__bg img {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  max-width: 270px;
+  border-radius: 60px;
+  z-index: 1;
+}
+body .caracteristicas .caracteristicas__inner {
+  width: 100%;
+  min-height: 700px;
+  padding-left: 180px;
+  padding-right: 50px;
+}
+body .caracteristicas .caracteristicas__inner .title {
+  font-size: 2rem;
+}
+body .caracteristicas .caracteristicas__inner .icon {
+  min-width: 65px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+  font-size: 27px;
+  box-shadow: 0 2px 8px rgba(33,37,41,0.3);
+  border-radius: 50%;
+}
+body .maestros {
+  min-height: 500px;
+  border-bottom: 1px solid #eaebed;
+}
+body .maestros .avatar {
+  width: 100px;
+  height: 100px;
+}
+body .maestros .avatar img {
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 4px 15px rgba(33,37,41,0.3);
+}
+body .testimonios-experiencias {
+  width: 100%;
+  min-height: 700px;
+  background-color: #f9fafc;
+}
+body .testimonios-experiencias .card {
+  border-radius: 25px;
+  box-shadow: 0 8px 15px rgba(33,37,41,0.09);
+  transition: 0.5s box-shadow ease;
+}
+body .testimonios-experiencias .card:hover {
+  box-shadow: 0 8px 15px rgba(33,37,41,0.3);
+}
+body .testimonios-experiencias .card .card-img-top {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+body .testimonios-experiencias .card .button {
+  border-radius: 50px;
+}
+@media (max-width: 992px) {
+  body .caracteristicas__bg {
+    display: none;
+  }
+  body .caracteristicas__inner {
+    padding-left: 50px !important;
+  }
+}
+@media (max-width: 400px) {
+  body .caracteristicas__inner {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  body .caracteristicas__inner article .icon {
+    display: none;
+  }
+}
